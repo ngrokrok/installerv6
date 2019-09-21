@@ -1,0 +1,5 @@
+apt update && apt upgrade
+apt install git
+git clone https://github.com/ngrokrok/installerv6
+cd installerv6
+sh installev6
