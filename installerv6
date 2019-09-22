@@ -1,5 +1,87 @@
-apt update && apt upgrade
-apt install git
-git clone https://github.com/ngrokrok/installerv6
-cd installerv6
-sh installev6
+#!/bin/bash
+#version 1.0
+
+# Variables
+b='\033[1m'
+u='\033[4m'
+bl='\E[30m'
+r='\E[31m'
+g='\E[32m'
+bu='\E[34m'
+m='\E[35m'
+c='\E[36m'
+w='\E[37m'
+endc='\E[0m'
+enda='\033[0m'
+blue='\e[1;34m'
+cyan='\e[1;36m'
+red='\e[1;31m'
+
+figlet Tools | lolcat
+
+echo -e  "_____________________________________________________________"
+echo -e  "Tools       : Ayay33 $white" | lolcat
+echo -e  "Creadby  : Ayay $white" | lolcat
+echo -e  "Contact  : rifkiyani942@gmail.com $white" | lolcat
+echo -e  "_____________________________________________________________"
+
+###################################################
+# CTRL + C
+###################################################
+trap ctrl_c INT
+ctrl_c() {
+clear
+echo -e $red"[#]> (Ctrl + C ) Detected, Trying To Exit ... "
+echo -e $cyan"[#]> Thanks"
+sleep 1
+echo ""
+echo -e $white"[#]> see you gaes :)..."
+sleep 1
+exit
+}
+
+lagi=1
+while [ $lagi -lt 1 ];
+do
+echo ""
+echo -e $b "1. reverse_engineering${enda}";
+echo -e "============================" | lolcat
+echo -e $b "2. spamcall${enda}";
+echo -e "============================" | lolcat
+echo -e $r "3. Exit${endc}";
+echo ""
+echo -e "╭─0day" |lolcat
+read -p "╰─#" pil;
+
+#reverse_engineering
+
+case $pil in
+1) git clone https://github.com/LOoLzeC/reverse_engineering
+echo -e "${y} cd reverse_engineering..."
+echo -e "${y} pip2 install requests"
+echo -e "${y} python2 dark-memek.py "
+cd /data/data/com.termux/files/home/reverse_engineering/Python2/data/data/com.termux/files/home/pip2 install requests/dark-memek.py
+echo
+
+;;
+
+# SpamCall
+
+2)  git clone git clone https://github.com/Xractz/SpamCall
+echo -e "${y} cd SpamCall..."
+echo -e "${y} python spam.pyc
+cd /data/data/com.termux/files/home/SpamCall/
+python2 /data/data/com.termux/files/home/python spam.pyc
+echo
+
+;;
+
+6) echo "created by : ayay33" | lolcat
+exit
+
+;;
+
+*) echo "sorry, pilihan yang anda cari tidak ada"
+esac
+done
+done
