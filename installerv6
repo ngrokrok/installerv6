@@ -20,7 +20,7 @@ red='\e[1;31m'
 figlet Tools | lolcat
 
 echo -e  "_____________________________________________________________"
-echo -e  "Tools       : Ayay33 $white" | lolcat
+echo -e  "Tools    : Ayay33 $white" | lolcat
 echo -e  "Creadby  : Ayay $white" | lolcat
 echo -e  "Contact  : rifkiyani942@gmail.com $white" | lolcat
 echo -e  "_____________________________________________________________"
@@ -60,7 +60,6 @@ case $pil in
 echo -e "${y} cd reverse_engineering..."
 echo -e "${y} pip2 install requests"
 echo -e "${y} python2 dark-memek.py "
-cd /data/data/com.termux/files/home/reverse_engineering/Python2/data/data/com.termux/files/home/pip2 install requests/dark-memek.py
 echo
 
 ;;
@@ -70,9 +69,8 @@ echo
 2)  git clone git clone https://github.com/Xractz/SpamCall
 echo -e "${y} cd SpamCall..."
 echo -e "${y} python spam.pyc
-cd /data/data/com.termux/files/home/SpamCall/
-python2 /data/data/com.termux/files/home/python spam.pyc
 echo
+
 
 ;;
 
